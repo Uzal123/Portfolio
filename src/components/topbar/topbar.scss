@@ -1,0 +1,10 @@
+@import "../../global.scss";
+
+.topbar{
+    height: 70px;
+    width: 100%;
+    background-color: $mainColor;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
