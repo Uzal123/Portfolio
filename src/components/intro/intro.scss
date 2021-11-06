@@ -1,5 +1,5 @@
 .intro{
-    background-color: beige;
+    background-color: #EEEEEE;
     width: 100%;
     display: flex;
 
@@ -19,7 +19,7 @@
             img{
                 height: 90%;
                 object-fit: cover;
-                transform: rotateY(180deg);
+                // transform: rotateY(180deg);
             }
         }
     }
