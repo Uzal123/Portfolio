@@ -18,6 +18,8 @@
             float: right;
             img{
                 height: 90%;
+                object-fit: cover;
+                transform: rotateY(180deg);
             }
         }
     }
