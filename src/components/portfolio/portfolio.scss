@@ -16,18 +16,7 @@
         margin: 10px;
         list-style: none;
 
-        li {
-            font-size: 15px;
-            margin: 0 25px;
-            padding: 7px;
-            cursor: pointer;
-
-            &.active {
-                color: white;
-                background-color: $mainColor;
-                border-radius: 10px;
-            }
-        }
+        
     }
 
     .container {
@@ -40,24 +29,40 @@
         .item {
             width: 220px;
             height: 170px;
-            margin: 10px 10px;
+            margin: 10px 20px;
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-
-            border-radius: 2px;
-
+            border: 1px solid rgb(240, 239, 239);
+            border-radius: 20px;
+            color: white;
+            transition: all 0.5s ease;
+        
             h2 {
                 position: absolute;
-                font-size: 18px;
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+                display: none;
+                cursor: default;
             }
 
-img {
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                z-index: 1;
+                // z-index: 0;
+            }
+            &:hover{
+                background-color: $mainColor;
+                h2{
+                    display: block;
+                }
+                img{
+                    opacity: 0.2;
+                    // z-index: 1;
+                }
             }
         }
     }

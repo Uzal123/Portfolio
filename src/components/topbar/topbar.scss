@@ -6,7 +6,8 @@
     background-color: #EEEEEE;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
+    transition: all 1s ease;
         .wrapper{
             padding: 10px 30px;
             display: flex;
@@ -21,7 +22,7 @@
                     font-size: 40px;
                     font-weight: 700;
                     text-decoration: none;
-                    color: #AA14F0;
+                    color: inherit;
                     margin-right: 40px;
                 }
                 .itemContainer{
@@ -47,14 +48,36 @@
                     flex-direction: column;
                     justify-content: space-between;
                     cursor: pointer;
-                    
+                    // overflow: hidden;
 
                     span{
                         width: 100px;
                         height: 3px;
-                        background-color: $mainColor;
+                        background-color: black;
+                        transform-origin: left;
+                        transition:all 1s ease;
                     }
                 }
             }
         }
+        &.active{
+            background-color: $mainColor;
+            color: #EEEEEE;
+
+            .hamburger{
+                span{
+                    &:first-child{
+                        background-color: #EEEEEE;
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        opacity: 0;
+                    }
+                    &:last-child{
+                        background-color: #eeeeee;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+            }
 }
