@@ -24,12 +24,9 @@ export default function Intro() {
                 <h1>Ujjwal Paswan</h1>
                 <h3>and I am a <span ref={textRef}></span></h3>
                 </div>
-                <div>
                     <a href="#portfolio">
                         <img src="assets/down.png" alt="" srcset="" />
                     </a>
-                </div>
-                
             </div>
         </div>
     )
