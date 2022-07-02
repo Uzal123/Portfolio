@@ -37,6 +37,7 @@ export default function Works() {
         ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
         : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
+  
     return (
         <div className="works" id="works">
             <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
